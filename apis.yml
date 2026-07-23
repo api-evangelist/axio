@@ -1,8 +1,25 @@
 aid: axio
-name: Axio
-description: 'Axio is a company surfaced as a portfolio company of accel, ribbit-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: manufacturing. This profile is a lead awaiting
-  the enrichment pipeline.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/axio.png
+name: Axio Biosolutions
+description: 'Axio Biosolutions Private Limited is a medical technology manufacturer headquartered
+  in Ahmedabad, Gujarat, India, focused on advanced chitosan-based solutions for bleeding
+  control, trauma care, surgical care, and advanced wound care. Its Axiostat hemostatic
+  dressings deliver rapid hemostasis for emergency, military, and surgical bleeding, while its
+  MaxioCel microfiber gelling wound dressings support wound healing, exudate management, and
+  infection risk reduction across chronic and acute wounds. Axio operates its own manufacturing
+  and quality systems and holds FDA and CE regulatory certifications. The company publishes no
+  public API or developer platform; this profile captures its public web and discovery surface.'
 url: https://raw.githubusercontent.com/api-evangelist/axio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Manufacturing
+- Medical Devices
+- MedTech
+- Healthcare
+- Wound Care
+- Hemostatic Dressings
+- Trauma Care
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/axio-domain-security.yml
 - type: Website
-  url: http://www.axiobio.com
+  url: https://axiobio.com
+- type: LLMsTxt
+  url: llms/axio-llms.txt
+- type: Blog
+  url: https://axiobio.com/insights
+- type: Support
+  url: https://axiobio.com/contact-us
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
